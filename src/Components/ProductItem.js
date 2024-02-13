@@ -27,16 +27,19 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 10,
         borderWidth: 1,
-        width: '90%',
+        borderColor: colors.green2,
+        backgroundColor: colors.green1,
+        width: '95%',
         alignSelf: 'center',
         marginBottom: 10
     },
 
     text: {
         fontSize: 25,
+        marginLeft: 10,
         fontFamily: 'Ubuntu',
-        textTransform: 'capitalize',
         marginBottom: 5,
+        fontWeight: 'bold'
     },
 
     image: {

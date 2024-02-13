@@ -13,10 +13,10 @@ const ItemListCategories = ({category, setCategorySelected}) => {
     useEffect(() => {
         if (category) {
             const products = allProducts.filter(product => product.category === category)
-            const productsFiltered = products.filter(product => product.title.includes(keyword))
+            const productsFiltered = products.filter(product => product.title.toLowerCase().includes(keyword.toLowerCase()))
             setProducts(productsFiltered)
         } else {
-            const productsFiltered = allProducts.filter(product => product.title.includes(keyword))
+            const productsFiltered = allProducts.filter(product => product.title.toLowerCase().includes(keyword.toLowerCase()))
             setProducts(productsFiltered)
         }
     }, [category, keyword])
